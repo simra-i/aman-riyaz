@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   BASE LAYER
+========================= */
+@layer base {
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 40 20% 90%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 40 20% 90%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 40 20% 90%;
+
+    --primary: 40 60% 50%;
+    --primary-foreground: 0 0% 5%;
+
+    --secondary: 345 40% 18%;
+    --secondary-foreground: 40 20% 90%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 40 10% 55%;
+
+    --accent: 345 60% 25%;
+    --accent-foreground: 40 20% 90%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 345 20% 18%;
+    --input: 345 20% 18%;
+    --ring: 40 60% 50%;
+
+    --radius: 0.25rem;
+
+    --gold: 40 60% 50%;
+    --gold-light: 40 70% 65%;
+    --maroon: 345 60% 18%;
+    --maroon-deep: 345 70% 12%;
+    --cosmos: 345 50% 8%;
+
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Montserrat', sans-serif;
+
+    --gradient-hero: linear-gradient(180deg, hsl(345 70% 10%) 0%, hsl(0 0% 5%) 100%);
+    --gradient-maroon: linear-gradient(135deg, hsl(345 60% 18%) 0%, hsl(345 70% 10%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(40 60% 50%) 0%, hsl(40 70% 65%) 100%);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* =========================
+   UTILITIES
+========================= */
+@layer utilities {
+
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .text-gold-light {
+    color: hsl(var(--gold-light));
+  }
+
+  .bg-maroon {
+    background-color: hsl(var(--maroon));
+  }
+
+  .bg-cosmos {
+    background-color: hsl(var(--cosmos));
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-gold-text {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-gold {
+    border-color: hsl(var(--gold));
+  }
+
+  .tracking-cinematic {
+    letter-spacing: 0.35em;
+  }
+
+  .tracking-ultra {
+    letter-spacing: 0.6em;
+  }
+}
+
+/* =========================
+   HERO IMAGE ANIMATION
+========================= */
+
+@keyframes heroReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero-reveal {
+  opacity: 0;
+  animation: heroReveal 1.2s ease-out forwards;
+}
+
+.hero-reveal-delay {
+  opacity: 0;
+  animation: heroReveal 1.2s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
