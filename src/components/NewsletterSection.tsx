@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useToast } from "@/hooks/use-toast";
 
-const FORMSPREE_ID = "https://formspree.io/f/xqedeldq"; // Replace with your Formspree form ID
+const FORMSPREE_ID = "xqedeldq";
+
 
 const countryCodes = [
   { code: "+91", label: "🇮🇳 +91" },
