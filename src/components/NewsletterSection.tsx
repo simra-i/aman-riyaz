@@ -81,7 +81,7 @@ const NewsletterSection = () => {
           Inner Circle
         </h2>
         <p className="font-body text-muted-foreground mb-10 text-base">
-          Be the first to hear new releases, tour dates, and exclusive content.
+          Unreleased demos, Exclusive voice notes. & The raw truth.<br/> Sent directly to you.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">

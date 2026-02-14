@@ -6,7 +6,7 @@ const AboutSection = () => {
   const { ref: textRef, isVisible: textVisible } = useScrollReveal(0.2);
 
   return (
-    <section id="about" className="relative py-24 md:py-32 bg-background overflow-hidden">
+    <section id="about" className="relative py-20 md:py-24 bg-background overflow-hidden">
       {/* Decorative line */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-gradient-to-b from-transparent via-gold/30 to-transparent" />
 
