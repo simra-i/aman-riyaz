@@ -6,8 +6,10 @@ const HeroSection = () => {
       id="home"
       className="relative  min-h-[100svh] flex flex-col items-center justify-center gradient-hero overflow-hidden"
     >
-
-      <div className="relative z-10 flex flex-col items-center text-center px-4">
+{/* slow cinematic pulse light */}
+<div className="hero-pulse-glow" />
+ <div className="relative z-10 flex flex-col items-center text-center px-4">
+      
 
         {/* Artist Image */}
         <div className="relative mb-6 flex justify-center">

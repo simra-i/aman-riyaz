@@ -30,8 +30,11 @@ const FooterSection = () => {
        
         {/* Copyright */}
         <p className="font-body text-xs text-muted-foreground tracking-wider">
-          &copy; {new Date().getFullYear()} AMAN RIYAZ. ALL RIGHTS RESERVED.
+          &copy; {new Date().getFullYear()} AMAN RIYAZ. ALL RIGHTS RESERVED. 
         </p>
+<p className="font-body text-[13px] text-muted-foreground/70 mt-2 italic">
+  Made in Bangalore
+</p>
 
       </div>
     </footer>

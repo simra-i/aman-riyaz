@@ -19,15 +19,18 @@ const LatestReleaseSection = () => {
   <h2 className="font-heading text-3xl md:text-4xl text-gold tracking-[0.3em]">
     LATEST RELEASE
   </h2>
-  <p className="font-body text-muted-foreground mt-3 text-sm md:text-base">
-    For the moments when you need to disappear
-  </p>
+<p className="font-body italic text-muted-foreground mt-3 text-sm md:text-base">
+  For the moments when you need to disappear
+</p>
+
+
+
 </div>
 
         <div className="aspect-video shadow-2xl">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/434O8aggl2M"
+            src="https://www.youtube.com/embed/gp7cHn-_WY4?si=u77JIGpYiKs9hJEq"
             title="YouTube video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

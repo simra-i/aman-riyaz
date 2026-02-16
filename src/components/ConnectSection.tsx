@@ -13,9 +13,12 @@ const ConnectSection = () => {
         </h2>
 
         {/* Subtext */}
-        <p className="font-body text-muted-foreground mt-6 text-base md:text-lg max-w-xl mx-auto">
-          No algorithms. Just art. Join the conversation.
-        </p>
+      <p className="font-body italic text-muted-foreground mt-4 text-sm md:text-base">
+  No algorithms. Just art. Join the conversation.
+</p>
+
+
+
 
         {/* Social Icons */}
         <div className="flex justify-center gap-8 mt-10">
