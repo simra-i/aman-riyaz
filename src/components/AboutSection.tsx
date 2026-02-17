@@ -19,11 +19,11 @@ const AboutSection = () => {
               imgVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-16"
             }`}
           >
-            <div className="absolute -inset-1 rounded-sm bg-gradient-to-br from-gold/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+            <div className="absolute -inset-1 " />
             <img
               src={aboutPhoto}
               alt="Aman Riyaz close-up portrait with sunglasses"
-              className="w-full rounded-sm shadow-2xl group-hover:scale-[1.02] transition-transform duration-700"
+              
             />
           </div>
 
