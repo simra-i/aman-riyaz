@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-guitar.png";
+import heroImage from "@/assets/hero-guitar.webp";
 
 const HeroSection = () => {
   return (
@@ -17,7 +17,8 @@ const HeroSection = () => {
             src={heroImage}
             alt="Aman Riyaz holding a guitar"
             className="h-[58vh] md:h-[85vh] object-contain drop-shadow-2xl hero-reveal"
-          />
+         loading="eager"
+decoding="async" />
         </div>
 
         {/* Name */}
