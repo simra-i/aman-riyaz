@@ -101,28 +101,29 @@ const NewsletterSection = () => {
             className="w-full px-5 py-4 bg-muted border border-border text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors duration-300"
             required
           />
-          <div className="flex gap-2">
-            <select
-              value={countryCode}
-              onChange={(e) => setCountryCode(e.target.value)}
-              className="px-3 py-4 bg-muted border border-border text-foreground font-body focus:outline-none focus:border-gold transition-colors duration-300 min-w-[110px]"
-            >
-              {countryCodes.map((c) => (
-                <option key={c.code} value={c.code}>
-                  {c.label}
-                </option>
-              ))}
-            </select>
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
-              className="flex-1 px-5 py-4 bg-muted border border-border text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors duration-300"
-              maxLength={15}
-              required
-            />
-          </div>
+        <div className="flex gap-2 w-full">
+  <select
+    value={countryCode}
+    onChange={(e) => setCountryCode(e.target.value)}
+    className="px-3 py-4 bg-muted border border-border text-foreground font-body focus:outline-none focus:border-gold transition-colors duration-300 w-[110px] shrink-0"
+  >
+    {countryCodes.map((c) => (
+      <option key={c.code} value={c.code}>
+        {c.label}
+      </option>
+    ))}
+  </select>
+
+  <input
+    type="tel"
+    placeholder="Phone Number"
+    value={phone}
+    onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
+    className="flex-1 min-w-0 w-full px-5 py-4 bg-muted border border-border text-foreground font-body placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors duration-300"
+    maxLength={15}
+    required
+  />
+</div>
           <button
             type="submit"
             disabled={submitting}
