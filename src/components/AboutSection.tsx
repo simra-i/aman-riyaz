@@ -1,4 +1,4 @@
-import aboutPhoto from "@/assets/about-photo.png";
+import aboutPhoto from "@/assets/about-photo.webp";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const AboutSection = () => {
